@@ -1,7 +1,5 @@
 package ru.stqa.pft.sandbox;
 
-import static ru.stqa.pft.sandbox.Point.distance;
-
 public class MyFirstProgram {
 	public static void main(String[] args) {
 		 /* hello("world");
@@ -21,8 +19,10 @@ public class MyFirstProgram {
 		r.b = 6;
 		System.out.println("Площадь прямоугольника со сторонами " + r.a + " и " + r.b + "=" + r.area()); */
 
-		Data p = new Data(3, 5, 1, 9);
-		System.out.println("Расстояние между точками = " + distance(p));
+		Pointdata x = new Pointdata(3, 5);
+		Pointdata y = new Pointdata(2, 9);
+
+		System.out.println("Расстояние между точками = " + Point.distance(x, y));
 
 	}
 	//описание функции; String somebody - параметр функции; void - ничего не возвращает
