@@ -19,10 +19,7 @@ public class MyFirstProgram {
 		r.b = 6;
 		System.out.println("Площадь прямоугольника со сторонами " + r.a + " и " + r.b + "=" + r.area()); */
 
-		Pointdata x = new Pointdata(3, 5);
-		Pointdata y = new Pointdata(2, 9);
 
-		System.out.println("Расстояние между точками = " + Point.distance(x, y));
 
 	}
 	//описание функции; String somebody - параметр функции; void - ничего не возвращает

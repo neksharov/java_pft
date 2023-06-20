@@ -1,8 +1,17 @@
 package ru.stqa.pft.sandbox;
 
-//√(xb - xa)2 + (yb - ya)2
 public class Point {
-    public static double distance(Pointdata p1, Pointdata p2){
-        return Math.sqrt((p1.x - p2.x) * (p1.x - p2.x) + (p1.y - p2.y) * (p1.y - p2.y));
+    public double x;
+    public double y;
+    public Point(double x, double y) {
+        this.x=x;
+        this.y=y;
     }
+    public double distance(Point p) {
+
+        double a = Math.pow((this.x - p.x), 2);
+        double b = Math.pow((this.y - p.y), 2);
+        return Math.sqrt(a + b);
+    }
+
 }
