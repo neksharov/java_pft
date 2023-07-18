@@ -11,11 +11,12 @@ public class GroupHelper extends HelperBase {
     }
 
     public void returnToGroupPage() {
-        click(By.linkText("Logout"));
+        wd.findElement(By.xpath("//input[21]")).click();
+        click(By.linkText("group page"));
     }
 
     public void submitGroupCreation() {
-        click(By.linkText("group page"));
+        click(By.linkText("submit"));
     }
 
     public void fillGroupForm(GroupData groupData) {
