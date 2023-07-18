@@ -11,7 +11,10 @@ public class GroupHelper extends HelperBase {
     }
 
     public void returnToGroupPage() {
+<<<<<<< HEAD
         wd.findElement(By.xpath("//input[21]")).click();
+=======
+>>>>>>> 46eeed604c4aff1796b580c5a3d8f367a13a6b15
         click(By.linkText("group page"));
     }
 
